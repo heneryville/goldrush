@@ -1,6 +1,6 @@
 digraph G {
-  src1 [ srcgold=8, srcnoise=100, rock= true  ];
-  src2 [ srcgold=2, srcnoise=100, rock= true ];
+  src1 [ srcgold=8, srcnoise=10, rock= true  ];
+  src2 [ srcgold=2, srcnoise=10, rock= true ];
 
   src1 -> rv1 -> rv2 -> rv3 -> sink;
   src2 -> rv4 -> rv2;

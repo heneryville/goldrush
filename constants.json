@@ -6,7 +6,12 @@
     "hydro": 8,
     "shaft": 13
   },
-  "sampleCoefficient": 15,
-  "goldFlow": 0.7
+  "coef": {
+    "sample": 75,
+    "noise": 100,
+    "gold": 1,
+    "flow": 0.1
+  },
+  "settleIterations": 2000
 }
 

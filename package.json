@@ -1,0 +1,12 @@
+{
+  "name": "goldrush",
+  "description": "Graphing simulations for the gold rush game",
+  "author": "Mitchell Harris",
+  "dependencies": {
+    "express": "^4.9.5",
+    "gulp": "^3.8.8",
+    "lodash": "*",
+    "q": "*"
+  },
+  "devDependencies": {}
+}

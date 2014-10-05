@@ -1,0 +1,12 @@
+{
+  "tools": {
+    "pan": 1,
+    "cradle": 2,
+    "sluice": 5,
+    "hydro": 8,
+    "shaft": 13
+  },
+  "sampleCoefficient": 15,
+  "goldFlow": 0.7
+}
+

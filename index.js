@@ -8,9 +8,39 @@ var util = require('util')
 //**************
 //* State
 //*************
-var game = new Game('./mine.dot');
+var game = new Game('./full.dot');
 game.report();
-//game.survey('rv1');
+game.survey('gitUpAndGit');
+
+var game = new Game('./full.dot');
+console.log("Mine");
+for(var i=0; i<10; ++i) {
+  console.log("Mined ",game.sample('gitUpAndGit','shaft'));
+}
+
+var game = new Game('./full.dot');
+console.log("Camptonville");
+for(var i=0; i<1; ++i) {
+  //console.log("Mined ",game.sample('camptonville','pan'));
+  game.survey('camptonville');
+}
+
+var game = new Game('./full.dot');
+console.log("Pilot Hill");
+for(var i=0; i<1; ++i) {
+  //console.log("Mined ",game.sample('pilotHill','pan'));
+  game.survey('pilotHill');
+}
+
+var game = new Game('./full.dot');
+console.log("Sluice down good");
+for(var i=0; i<10; ++i) {
+  console.log("Mined ",game.sample('pilotHill','sluice'));
+}
+var game = new Game('./full.dot');
+
+
+
 var year = 1;
 
 
@@ -24,7 +54,7 @@ rl.on('line', function(line) {
   var pieces = line.trim().split(' ');
   switch(pieces[0]) {
     case 'next':
-      game.simulate();
+      //game.simulate();
       year++;
       updatePrompt();
     break;

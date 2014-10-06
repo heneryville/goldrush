@@ -1,0 +1,76 @@
+digraph G {
+
+  //Sink 1
+  rotGut         [ srcgold=2, srcnoise=10, rock= true ];
+  whiskeyDiggins [ srcgold=2, srcnoise=10, rock= true ];
+  bridgeport     [ srcgold=2, srcnoise=10, rock= true ];
+  bottleHill     [ srcgold=2, srcnoise=10, rock= true ];
+  garrote        [ srcgold=2, srcnoise=10, rock= true ];
+
+  rotGut -> lousyLevel -> nevadaCity -> rawhide -> sink1;
+  rotGut -> roughAndReady -> nevadaCity;
+  whiskeyDiggins -> marysville -> iowaHill -> rawhide;
+  bridgeport -> marysville;
+  bottleHill -> iowaHill;
+  garrote -> lastChance -> youBet -> rawhide;
+  garrote -> murderersBar -> youBet;
+
+
+  //Sink 2
+  doubleSprings     [ srcgold=2, srcnoise=10, rock= true ];
+  chickenThiefFlats [ srcgold=2, srcnoise=10, rock= true ];
+  freezeOut         [ srcgold=2, srcnoise=10, rock= true ];
+  suckerFlat        [ srcgold=2, srcnoise=10, rock= true ];
+  bearValley        [ srcgold=2, srcnoise=10, rock= true ];
+  mountOphir        [ srcgold=2, srcnoise=10, rock= true ];
+  nipAndTuck        [ srcgold=2, srcnoise=10, rock= true ];
+  montezuma         [ srcgold=2, srcnoise=10, rock= true ];
+  butteCity         [ srcgold=2, srcnoise=10, rock= true ];
+  elDorado          [ srcgold=2, srcnoise=10, rock= true ];
+  falconville       [ srcgold=2, srcnoise=10, rock= true ];
+  crimesHouse       [ srcgold=2, srcnoise=10, rock= true ];
+  goodyearBar       [ srcgold=2, srcnoise=10, rock= true ];
+
+  doubleSprings -> carsonHill -> grizzlyFlats -> diamondSprings -> sink2;
+  chickenThiefFlats -> dogtown -> carsonHill;
+  freezeOut -> dogtown;
+  bearValley -> carsonHill;
+  mountOphir -> richBar -> hangtown -> grizzlyFlats;
+  nipAndTuck -> anglesCamp -> hangtown;
+  montezuma -> shawsFlat -> diamondSprings;
+  butteCity -> fiddletown -> shawsFlat;
+  elDorado -> fiddletown;
+  falconville -> cutEye -> jackson -> sonora -> diamondSprings;
+  crimesHouse -> volcano -> jackson;
+  goodyearBar -> sonora;
+
+
+  //Sink 3
+  henpickCity [ srcgold=2, srcnoise=10, rock= true ];
+  ricketville [ srcgold=2, srcnoise=10, rock= true ];
+  donkeyville [ srcgold=2, srcnoise=10, rock= true ];
+  dryTown     [ srcgold=2, srcnoise=10, rock= true ];
+  bedBug      [ srcgold=2, srcnoise=10, rock= true ];
+
+  henpickCity -> dutchFlat -> povertyHill -> kelsey -> sink3;
+  ricketville -> richGulch -> povertyHill;
+  donkeyville -> colma -> forrestHill -> kelsey;
+  dryTown -> colma;
+  bedBug -> forrestHill;
+
+  //Sink 4
+  ratTrapSlide   [ srcgold=2, srcnoise=10, rock= true ];
+  uncleTomsCabin [ srcgold=2, srcnoise=10, rock= true  ];
+  jackassHill    [ srcgold=2, srcnoise=10, rock= true  ];
+
+  ratTrapSlide -> fairPlay -> missouriFlats -> pokerFlat -> sink4;
+  uncleTomsCabin -> chineseCamp -> missouriFlats;
+  jackassHill -> mormonBar -> pokerFlat;
+
+  //Sink 5
+  gitUpAndGit  [ srcgold=100, srcnoise=10, rock= true  ];
+  hardScrabble [ srcgold=0.1, srcnoise=10, rock= true  ];
+  
+  gitUpAndGit -> pilotHill -> camptonville -> sink5;
+  hardScrabble -> goldRun -> camptonville;
+}

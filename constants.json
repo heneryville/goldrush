@@ -3,14 +3,17 @@
     "pan": 1,
     "cradle": 2,
     "sluice": 5,
-    "hydro": 8,
-    "shaft": 13
+    "hydro": 7,
+    "shaft": 16.0
   },
   "coef": {
-    "sample": 75,
-    "noise": 100,
-    "gold": 1,
-    "flow": 0.1
+    "goldVein": 8,
+    "goldEndurance": [3,3,3,3,3],
+    "sample": 5,
+    "noise": 2.7,
+    "goldErrosion": 1,
+
+    "flow": 0.6
   },
   "settleIterations": 2000
 }
